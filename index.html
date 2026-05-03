@@ -215,6 +215,50 @@ hr{border:none;border-top:1px solid var(--br);margin:0}
 
 /* FOOTER */
 footer{padding:2rem;text-align:center;font-size:12px;color:var(--mt);border-top:1px solid var(--br)}
+
+/* RESPONSIVE HARDENING */
+@media (max-width: 1024px){
+  .container{max-width:860px;padding:0 1.5rem}
+  .nav-top{padding:0 1rem}
+}
+
+@media (max-width: 768px){
+  section{min-height:auto;padding:84px 0 64px}
+  .container{padding:0 1rem}
+  .gcontrols{gap:8px}
+  .gcontrols .srow{flex-basis:100%;min-width:100%}
+  .gtog,.gfbtn{padding:8px 12px;font-size:12px}
+  .gcanvas-wrap{height:290px}
+  .qbox,.ibox,.gsection,.defbox{padding:1.2rem}
+  .prob-answer input{min-width:140px}
+}
+
+@media (max-width: 480px){
+  nav{min-height:52px}
+  .nav-top{height:52px;padding:0 .7rem;gap:.5rem}
+  .nav-brand{font-size:17px}
+  .ns{padding:6px 10px;font-size:10px}
+  h1{font-size:32px}
+  h2{font-size:28px}
+  .lead{font-size:15px;line-height:1.6}
+  .gcanvas-wrap{height:250px}
+  .prob-topbar{align-items:stretch}
+  .prob-filter,.prob-btn,.sol-btn,.btn,.btng{width:100%}
+  .prob-random{margin-left:0}
+  .prob-answer{flex-direction:column;align-items:stretch}
+  .prob-answer input{width:100%}
+  .qtxt{font-size:19px}
+  .gfacts{gap:8px}
+  .gfact{width:100%}
+}
+
+@media (max-width: 360px){
+  .container{padding:0 .75rem}
+  section{padding:78px 0 56px}
+  .tag{font-size:10px;padding:3px 10px}
+  .gcanvas-wrap{height:220px}
+  .eqval{font-size:15px}
+}
 </style>
 </head>
 <body>
